@@ -4,8 +4,8 @@ Set objFile = objFSO.OpenTextFile("config", 1)
 strText = objFile.ReadAll
 objFile.Close
 strNewText = Replace(strText, "token=", "")
-sRespond = "{""content"":"""&Split(WScript.Arguments, ">,;;,<")(0)&"""}"
-HTTPPost "https://discordapp.com/api/v6/channels/"&Split(WScript.Arguments, ">,;;,<")(1)&"/messages", sRespond
+sRespond = "{""content"":"""&Replace(Split(WScript.Arguments, """,")(0), "")&"""}"
+HTTPPost "https://discordapp.com/api/v6/channels/"&Split(WScript.Arguments, """,")(1)&"/messages", sRespond
 Function HTTPPost(sUrl, sRespond)
   Set objXmlHttp = CreateObject("Msxml2.ServerXMLHTTP") 
   on error resume next 
