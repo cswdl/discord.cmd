@@ -1,3 +1,4 @@
+@echo off
 rem ..```..---://++/:---...`.```````````````````...............--::/+osyyyhhhhhmNNNMMMMMMMMMMMMMMMMMMMMM
 rem `````.---:/oydNNdyyy/:-..-...`````````````````````....`................----+oosyNNNNNMMMMMMMMMMMMMMM
 rem `.``.`..-:/oyhmdddddhsyyyo+/:...`````````````````````.........``````..`......---//+osyyyhdNNMMMMMMMM
@@ -50,5 +51,5 @@ rem ``...```````````````.....`.....-...--------.------:::-::-:::::///++ooyyyysss
 rem ```....`````````````............-.-.-------:--::::::///:::://////+osyhsoooso///+//osyo+ohmMMMNNNNNNm
 rem ``.......`....`....``..``......`.....--------::::://///://////+oooooooo++++//+oo+syhs+ohNNMMMMMNNNNm
 rem                                        Discord.Cmd
-@echo off
+
 cscript sendMessage.vbs %* > nul
