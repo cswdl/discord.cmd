@@ -9,9 +9,9 @@ taDesBeauYeux = ""
 Set objArgs = Wscript.Arguments
 WScript.Echo objArgs.Count
 For Each strArg in objArgs
-  taDesBeauYeux = taDesBeauYeux & strArg
+  taDesBeauYeux = taDesBeauYeux & " " & strArg
 Next
-sRespond = "{""content"":"""&Replace(Split(taDesBeauYeux, "',")(0), "'", "")&"""}"
+sRespond = "{""content"":"""&Replace(Split(taDesBeauYeux, "',")(0), "'", Chr(39))&"""}"
 HTTPPost "https://discordapp.com/api/v6/channels/"&Split(taDesBeauYeux, "',")(1)&"/messages", sRespond
 Function HTTPPost(sUrl, sRespond)
   Set objXmlHttp = CreateObject("Msxml2.ServerXMLHTTP") 
