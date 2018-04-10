@@ -1,4 +1,4 @@
-SET token = powershell -command Get-Content config | Select-String -pattern "token=" -notmatch
+SET token = powershell -command (get-content "config") -notmatch "token="
 echo %token%
 goto keepalive
 :keepalive
