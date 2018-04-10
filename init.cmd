@@ -49,7 +49,7 @@ rem ``...````````.````````...`...........................--------::://++osshyyos
 rem ``...```````````````.....`.....-...--------.------:::-::-:::::///++ooyyyyssso+/:///++ooooyMMMNNNNNNm
 rem ```....`````````````............-.-.-------:--::::::///:::://////+osyhsoooso///+//osyo+ohmMMMNNNNNNm
 rem ``.......`....`....``..``......`.....--------::::://///://////+oooooooo++++//+oo+syhs+ohNNMMMMMNNNNm
-rem                                      not scamming
+rem                                        Discord.Cmd
 
 @echo off
 for /f "tokens=*" %%i in ('type token') do set token=%%i
