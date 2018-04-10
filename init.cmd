@@ -1,3 +1,5 @@
+
+@echo off
 rem ..```..---://++/:---...`.```````````````````...............--::/+osyyyhhhhhmNNNMMMMMMMMMMMMMMMMMMMMM
 rem `````.---:/oydNNdyyy/:-..-...`````````````````````....`................----+oosyNNNNNMMMMMMMMMMMMMMM
 rem `.``.`..-:/oyhmdddddhsyyyo+/:...`````````````````````.........``````..`......---//+osyyyhdNNMMMMMMMM
@@ -51,7 +53,6 @@ rem ```....`````````````............-.-.-------:--::::::///:::://////+osyhsoooso
 rem ``.......`....`....``..``......`.....--------::::://///://////+oooooooo++++//+oo+syhs+ohNNMMMMMNNNNm
 rem                                        Discord.Cmd
 
-@echo off
 for /f "tokens=*" %%i in ('type token') do set token=%%i
 echo %token%
 goto keepalive
