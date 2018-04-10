@@ -1,10 +1,18 @@
 Set objFSO = CreateObject("Scripting.FileSystemObject")
-
-Set objFile = objFSO.OpenTextFile("config", 1)
+dim CurrentDirectory
+CurrentDirectory = objFSO.GetAbsolutePathName(".")
+Set objFile = objFSO.OpenTextFile(CurrentDirectory & "/token", 1)
 strText = objFile.ReadAll
 objFile.Close
-sRespond = "{""content"":"""&Replace(Split(WScript.Arguments, """,")(0), "")&"""}"
-HTTPPost "https://discordapp.com/api/v6/channels/"&Split(WScript.Arguments, """,")(1)&"/messages", sRespond
+dim taDesBeauYeux
+taDesBeauYeux = ""
+Set objArgs = Wscript.Arguments
+WScript.Echo objArgs.Count
+For Each strArg in objArgs
+  taDesBeauYeux = taDesBeauYeux & strArg
+Next
+sRespond = "{""content"":"""&Replace(Split(taDesBeauYeux, "',")(0), "'", "")&"""}"
+HTTPPost "https://discordapp.com/api/v6/channels/"&Split(taDesBeauYeux, "',")(1)&"/messages", sRespond
 Function HTTPPost(sUrl, sRespond)
   Set objXmlHttp = CreateObject("Msxml2.ServerXMLHTTP") 
   on error resume next 
