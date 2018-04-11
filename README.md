@@ -4,7 +4,7 @@
   </p>
 </div>
 
-Discord.cmd is *not* a powerful [batch](https://en.wikipedia.org/wiki/Batch_file) library for the [Discord API](https://discordapp.com/developers/docs/intro) made for the memes by cth#0869 using a modified version of (telsocket)[http://telsocket.org/] (websocket.exe) for gateway and vbs for requests bc **batch**
+Discord.cmd is *not* a powerful [batch](https://en.wikipedia.org/wiki/Batch_file) library for the [Discord API](https://discordapp.com/developers/docs/intro) made for the memes by cth#0869 using a modified version of [telsocket](http://telsocket.org/)  (websocket.exe) for gateway and vbs for requests bc **batch**
 
 - not object oriented beacuse batch
 - its in batch
