@@ -12,7 +12,7 @@ Discord.cmd is *not* a powerful [batch](https://en.wikipedia.org/wiki/Batch_file
 - <img src="https://i.imgur.com/G4WOUKy.png" alt="stalin" />
 - 0.1% coverage of the Discord API
 
-[join the discord](https://discord.gg/nW4NM)
+[join the discord](https://discord.gg/eyrJ3fk)
 <div align="center">
   <p>
     <a href="https://github.com/cthpw103/discord.cmd"><img src="https://i.imgur.com/kQXZIb0.png" alt="uSE IT" /></a>
