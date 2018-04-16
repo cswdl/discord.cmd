@@ -12,6 +12,7 @@ Discord.cmd is *not* a powerful [batch](https://en.wikipedia.org/wiki/Batch_file
 - idk
 - <img src="https://i.imgur.com/G4WOUKy.png" alt="stalin" />
 - 0.1% coverage of the Discord API
+- doskey-full event handler :D
 
 ***"im fucking scared"*** -Lucky#1382
 
