@@ -51,4 +51,4 @@ rem ```....`````````````............-.-.-------:--::::::///:::://////+osyhsoooso
 rem ``.......`....`....``..``......`.....--------::::://///://////+oooooooo++++//+oo+syhs+ohNNMMMMMNNNNm
 rem                                        Discord.Cmd
 @echo off
-( call gatewayHandler.cmd %1 ) | websocket.exe -url wss://gateway.discord.gg/?v=6&encoding=json
+( call gatewayHandler.cmd %1 ) | websocket.exe -url wss://gateway.discord.gg/?v=6&encoding=json | gatewayOutputHandler.cmd
