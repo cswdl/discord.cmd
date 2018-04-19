@@ -11,11 +11,8 @@ WScript.Echo objArgs.Count
 For Each strArg in objArgs
   taDesBeauYeux = taDesBeauYeux & " " & strArg
 Next
-kiwi = Split(taDesBeauYeux, Chr(34) & ",")(0)
 sRespond = "{""content"":"""&Right(kiwi,Len(kiwi) - 1)&"""}"
-MsgBox sRespond
-MsgBox Split(taDesBeauYeux, Chr(34) & ",")(0)
-HTTPPost "https://discordapp.com/api/v6/channels/"&Replace(Split(taDesBeauYeux, "" & Chr(34) & ",")(1), Chr(34), "")&"/messages", sRespond
+HTTPPost "https://discordapp.com/api/v6/channels/"&Split(taDesBeauYeux, ", ")(1)&"/messages", sRespond
 Function HTTPPost(sUrl, sRespond)
   Set objXmlHttp = CreateObject("Msxml2.ServerXMLHTTP") 
   on error resume next 
