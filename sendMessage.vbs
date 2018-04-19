@@ -11,8 +11,8 @@ WScript.Echo objArgs.Count
 For Each strArg in objArgs
   taDesBeauYeux = taDesBeauYeux & " " & strArg
 Next
-kiwi = Replace(Split(taDesBeauYeux, "',")(0), "'", Chr(39))
-sRespond = "{""content"":"""&Right(kiwi,Len(kiwi) - 2)&"""}"
+kiwi = Replace(Split(taDesBeauYeux, "" & Chr(34) & ",")(0), "" & Chr(34) & ",", "")
+sRespond = "{""content"":"""&Right(kiwi,Len(kiwi) - 1)&"""}"
 MsgBox sRespond
 HTTPPost "https://discordapp.com/api/v6/channels/"&Split(taDesBeauYeux, "',")(1)&"/messages", sRespond
 Function HTTPPost(sUrl, sRespond)
