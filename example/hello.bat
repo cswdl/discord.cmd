@@ -1,4 +1,4 @@
-SET channelid = 123456789109876543
-cmd /c init.cmd
+SET channelid = 433206392573263903
+start cmd /c init.cmd
 timeout /t 5 /nobreak > NUL
-call sendMessage.bat "Hello", %channelid%
+call sendMessage.bat "ur mom gay" %channelid%
