@@ -53,9 +53,7 @@ rem ```....`````````````............-.-.-------:--::::::///:::://////+osyhsoooso
 rem ``.......`....`....``..``......`.....--------::::://///://////+oooooooo++++//+oo+syhs+ohNNMMMMMNNNNm
 rem                                        Discord.Cmd
 
-for /f "tokens=*" %%i in ('type token') do set token=%%i
-echo %token%
 goto keepalive
 :keepalive
-call gateway.cmd %token%
+call gateway.cmd
 goto keepalive
