@@ -4,4 +4,7 @@ set /p gatewayOutput=
 rem you can use %gatewayOutput% now!
 rem TODO: add fucking handling
 echo %gatewayOutput%
+IF "%gatewayOutput:~0,21%"=={"t":"MESSAGE_CREATE" (
+discordMessageCreate || echo no message_create event
+)
 goto loop
