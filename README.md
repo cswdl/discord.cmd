@@ -19,5 +19,7 @@ Discord.cmd is *not* a powerful [batch](https://en.wikipedia.org/wiki/Batch_file
 <div align="center">
   <p>
     <a href="https://github.com/cthpw103/discord.cmd"><img src="https://i.imgur.com/kQXZIb0.png" alt="uSE IT" /></a>
+    <br>
+    <img src="https://a.pomf.cat/gcrkos.jpg" alt="mmmmmm"/>
   </p>
 </div>
